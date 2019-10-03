@@ -21,7 +21,9 @@ module.exports = {
 
             if (copyrightConfig) {
                 var str = '<div id="copyright-container" class="gitbook-plugin-copyright"></div>';
+                page.content = page.content + '\n' + str;
 
+                str = `![{copyrightConfig.image}]({copyrightConfig.image})`;
                 page.content = page.content + '\n' + str;
             }
 
