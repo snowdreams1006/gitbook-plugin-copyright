@@ -20,11 +20,18 @@ module.exports = {
             this.log.debug.ln('page:before', page.content);
 
             if (copyrightConfig) {
-                var str = '<div id="copyright-container" class="gitbook-plugin-copyright"></div>';
-                page.content = page.content + '\n' + str;
+                var copyright = ` 
+                \`\`\`html
+作者: ${copyrightConfig.author}
+链接: http://snowdreams1006.github.io/
+来源:「${copyrightConfig.website}」
+本文原创发布于「${copyrightConfig.website}」,©著作权归作者所有,转载请注明出处,谢谢合作!
+\`\`\`
 
-                str = `![${copyrightConfig.image}](${copyrightConfig.image})`;
-                page.content = page.content + '\n' + str;
+![${copyrightConfig.image}](${copyrightConfig.image})
+`;
+
+                page.content = page.content + '\n' + copyright;
             }
 
             return page;

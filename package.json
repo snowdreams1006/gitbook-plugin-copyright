@@ -11,10 +11,31 @@
   },
   "gitbook": {
     "properties": {
-      "image": {
+      "author": {
         "type": "string",
         "required": true,
-        "description": "image url to show copyright."
+        "description": "author"
+      }
+    },
+    "properties": {
+      "site": {
+        "type": "string",
+        "required": true,
+        "description": "site"
+      }
+    },
+    "properties": {
+      "website": {
+        "type": "string",
+        "required": true,
+        "description": "website"
+      }
+    },
+    "properties": {
+      "image": {
+        "type": "string",
+        "required": false,
+        "description": "image"
       }
     }
   },
