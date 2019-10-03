@@ -23,9 +23,9 @@ module.exports = {
                 var copyright = ` 
                 \`\`\`html
 作者: ${copyrightConfig.author}
-链接: http://snowdreams1006.github.io/
-来源:「${copyrightConfig.website}」
-本文原创发布于「${copyrightConfig.website}」,©著作权归作者所有,转载请注明出处,谢谢合作!
+链接: ${copyrightConfig.site}
+来源: ${copyrightConfig.website}
+本文原创发布于${copyrightConfig.website},©著作权归作者所有,转载请注明出处,谢谢合作!
 \`\`\`
 
 ![${copyrightConfig.image}](${copyrightConfig.image})
