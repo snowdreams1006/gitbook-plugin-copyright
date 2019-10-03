@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-copyright",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "gitbook-plugin-copyright",
   "main": "index.js",
   "scripts": {
