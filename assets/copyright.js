@@ -50,8 +50,13 @@ require([
             if (site.slice(-1) != "/") {
                 site += '/';
             }
-            var filepath = gitbook.state.filepath;
-            var url = site + (filepath === 'README.md' ? '' : filepath.replace(/.md$/, '.html'));
+            var url = gitbook.state.filepath;
+            var readmeReg = /\/?\bREADME\.md$/;
+            if (readmeReg.test(url)) {
+                url = site + (url === 'README.md' ? '' : url.replace(readmeReg, '/'));
+            } else {
+                url = site + url.replace(/.md$/, '.html');
+            }
             return '\n\n作者: ' + copyrightConfig.author + '\n链接: ' + url + '\n来源: ' + copyrightConfig.website + '\n本文原创发布于' + copyrightConfig.website + ',转载请注明出处,谢谢合作!\n';
         }
     });

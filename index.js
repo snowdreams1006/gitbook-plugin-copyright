@@ -21,7 +21,13 @@ module.exports = {
                 if (site.slice(-1) != "/") {
                     site += '/';
                 }
-                var url = site + (page.path === 'README.md' ? '' : page.path.replace(/.md$/, '.html'));
+                var url = page.path;
+                var readmeReg = /\/?\bREADME\.md$/;
+                if (readmeReg.test(url)) {
+                    url = site + ( url === 'README.md' ? '' : url.replace(readmeReg, '/'));
+                } else {
+                    url = site + url.replace(/.md$/, '.html');
+                }
                 var copyright = '\n\n```html\n作者: ' + copyrightConfig.author + '\n链接: ' + url + '\n来源: ' + copyrightConfig.website + '\n本文原创发布于' + copyrightConfig.website + ',转载请注明出处,谢谢合作!```\n';
                 if (copyrightConfig.image) {
                     copyright += `\n![${copyrightConfig.image}](${copyrightConfig.image})`;
