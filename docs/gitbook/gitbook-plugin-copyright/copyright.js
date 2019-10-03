@@ -6,7 +6,7 @@ require([
     gitbook.events.bind("start", function(e, config) {
         copyrightConfig = config.copyright || {};
 
-        initCopyright();
+        initMygitalk();
     });
 
     gitbook.events.bind("page.change", initCopyright);

@@ -42,6 +42,3 @@ Give a ⭐️ if this project helped you!
 Copyright © 2019 [snowdreams1006](https://github.com/snowdreams1006).
 
 This project is [MIT](https://github.com/snowdreams1006/gitbook-plugin-copyright/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

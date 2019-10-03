@@ -1,0 +1,15 @@
+{
+    "title": "copyright简单示例",
+    "author": "snowdreams1006",
+    "description": "gitbook-plugin-copyright简单示例",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "plugins": [
+        "copyright"
+    ],
+    "pluginsConfig":{
+        "copyright":{
+            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+        }
+    }
+}
