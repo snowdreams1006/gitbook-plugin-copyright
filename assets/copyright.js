@@ -36,14 +36,26 @@ require([
                 if (!window.clipboardData) {
                     window.clipboardData = e.originalEvent.clipboardData;
                 }
-
-                var extraCopyrightInfo = '\n\n作者: ' + copyrightConfig.author + '\n链接: ' + copyrightConfig.site + '\n来源: ' + copyrightConfig.website + '\n本文原创发布于' + copyrightConfig.website + ',转载请注明出处,谢谢合作!\n';
+                var extraCopyrightInfo = getCopyright();
                 clipboardData.setData('text/plain', select + extraCopyrightInfo);
             });
         }
 
         function initDOMHeight() {
             $('body').css('height', document.documentElement.clientHeight + 'px');
+        }
+
+        function getCopyright() {
+            var lang = gitbook.state.innerLanguage;
+            if (lang) {
+                lang += '/';
+            }
+            var site = copyrightConfig.site;
+            if (site.slice(-1) != "/") {
+                site += '/';
+            }
+            var url = site + lang + gitbook.state.filepath;
+            return '\n\n作者: ' + copyrightConfig.author + '\n链接: ' + url + '\n来源: ' + copyrightConfig.website + '\n本文原创发布于' + copyrightConfig.website + ',转载请注明出处,谢谢合作!\n';
         }
     });
 });
