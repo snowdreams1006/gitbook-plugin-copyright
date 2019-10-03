@@ -6,6 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "gitbook": ">=2.4.3"
+  },
+  "gitbook": {
+    "properties": {
+      "image": {
+        "type": "string",
+        "required": true,
+        "description": "image url to show copyright."
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/snowdreams1006/gitbook-plugin-copyright.git"
