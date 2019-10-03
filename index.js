@@ -17,7 +17,12 @@ module.exports = {
             this.log.debug.ln('page:before', JSON.stringify(page));
 
             if (copyrightConfig) {
-                var copyright = '\n\n```html\n作者: ' + copyrightConfig.author + '\n链接: ' + copyrightConfig.site + '\n来源: ' + copyrightConfig.website + '\n本文原创发布于' + copyrightConfig.website + ',转载请注明出处,谢谢合作!```\n';
+                var site = copyrightConfig.site;
+                if (site.slice(-1) != "/") {
+                    site += '/';
+                }
+                var url = site + (page.path === 'README.md' ? '' : page.path.replace(/.md$/, '.html'));
+                var copyright = '\n\n```html\n作者: ' + copyrightConfig.author + '\n链接: ' + url + '\n来源: ' + copyrightConfig.website + '\n本文原创发布于' + copyrightConfig.website + ',转载请注明出处,谢谢合作!```\n';
                 if (copyrightConfig.image) {
                     copyright += `\n![${copyrightConfig.image}](${copyrightConfig.image})`;
                 }
