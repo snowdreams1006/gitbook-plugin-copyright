@@ -4,6 +4,11 @@
     "description": "gitbook-plugin-copyright简单示例",
     "language": "zh-hans",
     "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "snowdreams1006": "https://snowdreams1006.github.io/"
+        }
+    },
     "plugins": [
         "copyright"
     ],

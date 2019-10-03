@@ -53,6 +53,6 @@ require([
         } else {
             url = site + url.replace(/.md$/, '.html');
         }
-        return '<br><br>作者: ' + copyrightConfig.author + '<br>链接: ' + url + '<br>来源: ' + copyrightConfig.website + '<br>本文原创发布于' + copyrightConfig.website + ',转载请注明出处,谢谢合作!<br>';
+        return '<br><br>作者: ' + copyrightConfig.author + '<br>链接: ' + url + '<br>来源: ' + copyrightConfig.website + '<br>本文原创发布于「' + copyrightConfig.website + '」,转载请注明出处,谢谢合作!<br>';
     }
 });
