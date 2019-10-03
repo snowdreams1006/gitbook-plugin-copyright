@@ -28,7 +28,7 @@ module.exports = {
                 } else {
                     url = site + url.replace(/.md$/, '.html');
                 }
-                var copyright = '\n\n```html\n作者: ' + copyrightConfig.author + '\n链接: ' + url + '\n来源: ' + copyrightConfig.website + '\n本文原创发布于' + copyrightConfig.website + ',转载请注明出处,谢谢合作!```\n';
+                var copyright = '\n\n```html\n作者: ' + copyrightConfig.author + '\n链接: ' + url + '\n来源: ' + copyrightConfig.website + '\n本文原创发布于「' + copyrightConfig.website + '」,转载请注明出处,谢谢合作!```\n';
                 if (copyrightConfig.image) {
                     copyright += `\n![${copyrightConfig.image}](${copyrightConfig.image})`;
                 }

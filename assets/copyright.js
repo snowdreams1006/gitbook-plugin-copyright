@@ -13,51 +13,46 @@ require([
     gitbook.events.bind("page.change", initCopyright);
 
     function initCopyright() {
-        window.copyright.initPage();
-        window.copyright.initEvent();
+        var ua = navigator.userAgent.toLowerCase();
+        if (window.ActiveXObject) {
+            document.body.oncopy = function() {
+                event.returnValue = false;
+                var t = document.selection.createRange().text;
+                var extraCopyrightInfo = getCopyright();
+                clipboardData.setData('Text', t + extraCopyrightInfo);
+            };
+        } else {
+            function addLink() {
+                var body_element = document.getElementsByTagName('body')[0];
+                var selection;
+                selection = window.getSelection();
+                var extraCopyrightInfo = getCopyright();
+                var copytext = selection + extraCopyrightInfo;
+                var newdiv = document.createElement('div');
+                newdiv.style.position = 'absolute';
+                newdiv.style.left = '-99999px';
+                body_element.appendChild(newdiv);
+                newdiv.innerHTML = copytext;
+                selection.selectAllChildren(newdiv);
+                window.setTimeout(function() { body_element.removeChild(newdiv); }, 0);
+            }
+            document.oncopy = addLink;
+        }
+
     }
 
-    (function(factory) {
-        factory();
-    })(function() {
-        window.copyright = {
-            initEvent: initEvent,
-            initPage: initPage
-        };
-
-        function initPage() {
-            initDOMHeight();
+    function getCopyright() {
+        var site = copyrightConfig.site;
+        if (site.slice(-1) != "/") {
+            site += '/';
         }
-
-        function initEvent() {
-            $('body').on('copy', function(e) {
-                e.preventDefault();
-                var select = getSelection();
-                if (!window.clipboardData) {
-                    window.clipboardData = e.originalEvent.clipboardData;
-                }
-                var extraCopyrightInfo = getCopyright();
-                clipboardData.setData('text/plain', select + extraCopyrightInfo);
-            });
+        var url = gitbook.state.filepath;
+        var readmeReg = /\/?\bREADME\.md$/;
+        if (readmeReg.test(url)) {
+            url = site + (url === 'README.md' ? '' : url.replace(readmeReg, '/'));
+        } else {
+            url = site + url.replace(/.md$/, '.html');
         }
-
-        function initDOMHeight() {
-            $('body').css('height', document.documentElement.clientHeight + 'px');
-        }
-
-        function getCopyright() {
-            var site = copyrightConfig.site;
-            if (site.slice(-1) != "/") {
-                site += '/';
-            }
-            var url = gitbook.state.filepath;
-            var readmeReg = /\/?\bREADME\.md$/;
-            if (readmeReg.test(url)) {
-                url = site + (url === 'README.md' ? '' : url.replace(readmeReg, '/'));
-            } else {
-                url = site + url.replace(/.md$/, '.html');
-            }
-            return '\n\n作者: ' + copyrightConfig.author + '\n链接: ' + url + '\n来源: ' + copyrightConfig.website + '\n本文原创发布于' + copyrightConfig.website + ',转载请注明出处,谢谢合作!\n';
-        }
-    });
+        return '<br><br>作者: ' + copyrightConfig.author + '<br>链接: ' + url + '<br>来源: ' + copyrightConfig.website + '<br>本文原创发布于' + copyrightConfig.website + ',转载请注明出处,谢谢合作!<br>';
+    }
 });
