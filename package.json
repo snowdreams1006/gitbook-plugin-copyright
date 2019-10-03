@@ -11,6 +11,21 @@
   },
   "gitbook": {
     "properties": {
+      "site": {
+        "type": "string",
+        "required": false,
+        "description": "site"
+      },
+      "author": {
+        "type": "string",
+        "required": true,
+        "description": "author"
+      },
+      "website": {
+        "type": "string",
+        "required": true,
+        "description": "website"
+      },
       "image": {
         "type": "string",
         "required": false,
