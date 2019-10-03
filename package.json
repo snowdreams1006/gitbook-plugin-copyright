@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-copyright",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "gitbook-plugin-copyright",
   "main": "index.js",
   "scripts": {
@@ -10,27 +10,6 @@
     "gitbook": ">=2.4.3"
   },
   "gitbook": {
-    "properties": {
-      "author": {
-        "type": "string",
-        "required": true,
-        "description": "author"
-      }
-    },
-    "properties": {
-      "site": {
-        "type": "string",
-        "required": true,
-        "description": "site"
-      }
-    },
-    "properties": {
-      "website": {
-        "type": "string",
-        "required": true,
-        "description": "website"
-      }
-    },
     "properties": {
       "image": {
         "type": "string",
