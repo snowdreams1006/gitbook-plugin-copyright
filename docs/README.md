@@ -12,14 +12,19 @@
 
 ### 🏠 [主页](https://github.com/snowdreams1006/gitbook-plugin-copyright#readme)
 
+## 效果
+
+- [项目主页](https://snowdreams1006.github.io/gitbook-plugin-copyright/)
+- [项目源码](https://github.com/snowdreams1006/gitbook-plugin-copyright)
+
+![copyright-use-preview.png](copyright-use-preview.png)
+
 ## 特色
 
 - 支持复制内容**自动追加**版本保护信息
 - 支持文章末尾**自动生成**版本保护尾巴
 - 支持自定义小尾巴**版权保护图片**
 - 支持 `Gitbook` **多语言环境**
-
-![copyright-use-preview.png](copyright-use-preview.png)
 
 ## 安装
 
