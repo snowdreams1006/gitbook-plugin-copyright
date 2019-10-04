@@ -21,9 +21,12 @@ module.exports = {
                 if (site.slice(-1) != "/") {
                     site += '/';
                 }
-                var lang = this.options.language;
-                if (lang) {
-                    lang += '/';
+                var lang = '';
+                if (this.isLanguageBook()) {
+                    lang = this.options.language;
+                    if (lang) {
+                        lang += '/';
+                    }
                 }
                 var url = page.path;
                 var readmeReg = /\/?\bREADME\.md$/;
