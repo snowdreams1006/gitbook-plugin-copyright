@@ -8,7 +8,7 @@
 [![Github: snowdreams1006](https://img.shields.io/badge/github-snowdreams1006-brightgreen.svg)](https://github.com/snowdreams1006)
 [![微信公众号: 雪之梦技术驿站](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7-%E9%9B%AA%E4%B9%8B%E6%A2%A6%E6%8A%80%E6%9C%AF%E9%A9%BF%E7%AB%99-brightgreen.svg)](https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg)
 
-> `gitbook-plugin-copyright` 插件是基于 `Gitbook` 实现的版权保护插件,复制内容追加版本信息以及末尾添加小尾巴.
+> `gitbook-plugin-copyright` 插件是基于 `Gitbook` 复实现的版权保护插件,基于Gitbook实现的版权保护插件,用于复制内容时追加版本信息以及文章末尾添加版权小尾巴.
 
 ### 🏠 [主页](https://github.com/snowdreams1006/gitbook-plugin-copyright#readme)
 

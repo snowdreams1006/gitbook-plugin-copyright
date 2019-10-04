@@ -1,10 +1,10 @@
 {
   "name": "gitbook-plugin-copyright",
   "version": "0.3.0",
-  "description": "gitbook-plugin-copyright",
+  "description": "基于Gitbook实现的版权保护插件,用于复制内容时追加版本信息以及文章末尾添加版权小尾巴",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo welcome to use gitbook-plugin-copyright created by snowdreams1006"
   },
   "engines": {
     "gitbook": ">=2.4.3"
@@ -13,7 +13,7 @@
     "properties": {
       "site": {
         "type": "string",
-        "required": false,
+        "required": true,
         "description": "site"
       },
       "author": {
@@ -49,5 +49,5 @@
   "bugs": {
     "url": "https://github.com/snowdreams1006/gitbook-plugin-copyright/issues"
   },
-  "homepage": "https://github.com/snowdreams1006/gitbook-plugin-copyright#readme"
+  "homepage": "https://snowdreams1006.github.io/gitbook-plugin-copyright/"
 }
