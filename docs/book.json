@@ -10,14 +10,44 @@
         }
     },
     "plugins": [
-        "copyright"
+        "github",
+        "edit-link",
+        "copy-code-button",
+        "favicon-plus",
+        "openwrite",
+        "copyright",
+        "mygitalk"
     ],
-    "pluginsConfig":{
-        "copyright": {      
-            "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright/",
+    "pluginsConfig": {
+        "favicon": "favicon.ico",
+        "appleTouchIconPrecomposed152": "apple-touch-icon-precomposed-152.png",
+        "output": "_book",
+        "github": {
+            "url": "https://github.com/snowdreams1006/gitbook-plugin-copyright"
+        },
+        "edit-link": {
+            "base": "https://github.com/snowdreams1006/gitbook-plugin-copyright/blob/master",
+            "label": "编辑本页"
+        },
+        "openwrite": {
+            "blogId": "15702-1569305559839-744",
+            "name": "雪之梦技术驿站",
+            "qrcode": "https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg",
+            "keyword": "vip"
+        },
+        "copyright": {
+            "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
             "author": "雪之梦技术驿站",
             "website": "雪之梦技术驿站",
             "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+        },
+        "mygitalk": {
+            "clientID": "3f62415a283d19cbd696",
+            "clientSecret": "aed0e1db0620bf5d0e3a3f0225f801997ad74e58",
+            "repo": "gitbook-plugin-copyright",
+            "owner": "snowdreams1006",
+            "admin": ["snowdreams1006"],
+            "distractionFreeMode": false
         }
     }
 }
