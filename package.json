@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-copyright",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "基于Gitbook实现的版权保护插件,用于复制内容时追加版本信息以及文章末尾添加版权小尾巴",
   "main": "index.js",
   "scripts": {
