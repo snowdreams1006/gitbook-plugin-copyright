@@ -46,12 +46,16 @@ require([
         if (site.slice(-1) != "/") {
             site += '/';
         }
+        var lang = gitbook.state.innerLanguage;
+        if (lang) {
+            lang += '/';
+        }
         var url = gitbook.state.filepath;
         var readmeReg = /\/?\bREADME\.md$/;
         if (readmeReg.test(url)) {
-            url = site + (url === 'README.md' ? '' : url.replace(readmeReg, '/'));
+            url = site + lang + (url === 'README.md' ? '' : url.replace(readmeReg, '/'));
         } else {
-            url = site + url.replace(/.md$/, '.html');
+            url = site + lang + url.replace(/.md$/, '.html');
         }
         return '<br><br>作者: ' + copyrightConfig.author + '<br>链接: ' + url + '<br>来源: ' + copyrightConfig.website + '<br>本文原创发布于「' + copyrightConfig.website + '」,转载请注明出处,谢谢合作!<br>';
     }

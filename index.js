@@ -21,6 +21,10 @@ module.exports = {
                 if (site.slice(-1) != "/") {
                     site += '/';
                 }
+
+// var lang = gitbook.state.innerLanguage;
+                console.log(`isLanguageBook=${this.isLanguageBook()},language=${this.book.language}`);
+
                 var url = page.path;
                 var readmeReg = /\/?\bREADME\.md$/;
                 if (readmeReg.test(url)) {
