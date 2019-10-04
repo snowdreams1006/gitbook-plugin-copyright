@@ -8,147 +8,85 @@
 [![Github: snowdreams1006](https://img.shields.io/badge/github-snowdreams1006-brightgreen.svg)](https://github.com/snowdreams1006)
 [![微信公众号: 雪之梦技术驿站](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7-%E9%9B%AA%E4%B9%8B%E6%A2%A6%E6%8A%80%E6%9C%AF%E9%A9%BF%E7%AB%99-brightgreen.svg)](https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg)
 
+> `gitbook-plugin-copyright` 插件是基于 `Gitbook` 实现的版权保护插件,复制内容追加版本信息以及末尾添加小尾巴.
 
+### 🏠 [主页](https://github.com/snowdreams1006/gitbook-plugin-copyright#readme)
 
-`Mygitalk` is a **gitbook comment plugin** based on `gitalk`.
+## 效果
 
-If you want to know the story behind `mygitalk`, please visit [gitbook-plugin-mygitalk](https://snowdreams1006.github.io/gitbook-plugin-mygitalk/).
+- [项目主页](https://snowdreams1006.github.io/gitbook-plugin-copyright/)
+- [项目源码](https://github.com/snowdreams1006/gitbook-plugin-copyright)
 
+![copyright-use-preview.png](copyright-use-preview.png)
 
+## 特色
 
+- 支持复制内容**自动追加**版本保护信息
+- 支持文章末尾**自动生成**版本保护尾巴
+- 支持自定义小尾巴**版权保护图片**
+- 支持 `Gitbook` **多语言环境**
 
-> gitbook-plugin-copyright
+## 安装
 
-### 🏠 [Homepage](https://github.com/snowdreams1006/gitbook-plugin-copyright#readme)
-
-## Install
-
-```sh
-npm install
-```
-
-## Run tests
-
-```sh
-npm run test
-```
-
-## Author
-
-👤 **snowdreams1006**
-
-* Github: [@snowdreams1006](https://github.com/snowdreams1006)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check [issues page](https://github.com/snowdreams1006/gitbook-plugin-copyright/issues).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-
-## 📝 License
-
-Copyright © 2019 [snowdreams1006](https://github.com/snowdreams1006).
-
-This project is [MIT](https://github.com/snowdreams1006/gitbook-plugin-copyright/blob/master/LICENSE) licensed.
-
-
-
-
-# gitbook-plugin-mygitalk
-
-[![npm version](https://img.shields.io/npm/v/gitbook-plugin-mygitalk.svg)](https://www.npmjs.com/package/gitbook-plugin-mygitalk)
-[![npm-download](https://img.shields.io/npm/dt/gitbook-plugin-mygitalk.svg)](https://www.npmjs.com/package/gitbook-plugin-mygitalk)
-[![npm-license](https://img.shields.io/npm/l/gitbook-plugin-mygitalk.svg)](https://www.npmjs.com/package/gitbook-plugin-mygitalk)
-[![github](https://img.shields.io/badge/github-snowdreams1006-brightgreen.svg)](https://github.com/snowdreams1006)
-[![微信公众号](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7-%E9%9B%AA%E4%B9%8B%E6%A2%A6%E6%8A%80%E6%9C%AF%E9%A9%BF%E7%AB%99-brightgreen.svg)](https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg)
-
-`Mygitalk` is a **gitbook comment plugin** based on `gitalk`.
-
-If you want to know the story behind `mygitalk`, please visit [gitbook-plugin-mygitalk](https://snowdreams1006.github.io/gitbook-plugin-mygitalk/).
-
-![mygitalk-use-preview.png](https://github.com/snowdreams1006/gitbook-plugin-mygitalk/raw/master/docs/images/mygitalk-use-preview.png)
-
-## Feature
-
-- Authentication with github account
-- Serverless, all comments will be stored as github issues
-- Both personal and organization github projects can be used to store comments 
-- Localization, support multiple languages [en, zh-CN, zh-TW, es-ES, fr, ru]
-- Facebook-like distraction free mode (Can be enabled via the `distractionFreeMode` option)
-- Hotkey submit comment (cmd|ctrl + enter)
-
-## Usage
-
-- Install this plugin
-
-Add `mygitalk` to `plugins` in `book.json` configuration file.
+首先,在 `book.json` 配置文件中**声明** `copyright` 插件,示例代码如下:
 
 ```json
 {
-    "plugins" : ["mygitalk"]
+    "plugins" : ["copyright"]
 }
 ```
 
-Install `mygitalk` via `npm` or `gitbook` .
-
-```bash
-$ npm install gitbook-plugin-mygitalk
-```
-
-or 
-
-```bash
-$ gitbook install
-```
-
-- Configure this plugin
-
-Prepare a `GitHub application` , if you don't have one, [Click here](https://github.com/settings/applications/new) to register a new one.
-
-Add it to your `book.json` with a basic configuration
+然后,在 `book.json` 配置文件中**配置** `copyright` 插件,示例代码如下:
 
 ```json
 {
   "pluginsConfig": {
-    "mygitalk": {
-        "clientID": "GitHub Application Client ID",
-        "clientSecret": "GitHub Application Client Secret",
-        "repo": "GitHub repo",
-        "owner": "GitHub repo owner",
-        "admin": ["GitHub repo owner and collaborators, only these guys can initialize github issues"],
-        "distractionFreeMode": false
+    "copyright": {
+        "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
+        "author": "雪之梦技术驿站",
+        "website": "雪之梦技术驿站",
+        "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
     }
   }
 }
 ```
 
-- Run `gitbook` locally
+其中,配置参数含义如下: 
 
-Run `gitbook build` or `gitbook serve` to verify this plugin is in effect and should not have been initialized yet.
+- `site` : [必选]部署网站基本路径
+- `author` : [必选]作者信息
+- `website` : [必选]网站名称
+- `image` : [可选]版权保护图片
 
-- Release `gitbook` officially
+最后,命令行内运行 `gitbook install` **安装插件**到本地,示例代码如下:
 
-Publish to the production environment to implement the comment function really.
+```bash
+$ gitbook install
+```
 
-- `Star` this plugin
+## 示例
 
-If you feel this plugin is helpful, feel free to `star` [gitbook-plugin-mygitalk](https://github.com/snowdreams1006/gitbook-plugin-mygitalk).
+不仅 [gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright) **官方文档**已整合 `copyright` 版权保护插件,此外还提供了示例项目,详情参考 `example` 目录.
 
-## Example
+无论是 `docs` **官方文档**还是 `example` **示例文档**,整合 `copyright` 版权保护插件真的很容易!
 
-The [gitbook-plugin-mygitalk](https://github.com/snowdreams1006/gitbook-plugin-mygitalk) project has been integrated with the plugin itself or you can refer to the [sample project](https://github.com/snowdreams1006/gitbook-plugin-mygitalk/tree/master/example).
+## 作者
 
-## Feedback
+👤 **snowdreams1006**
 
-I am very happy to help out with your books or any other questions you might have. see [snowdreams1006](https://github.com/snowdreams1006)
+- Github: [@snowdreams1006](https://github.com/snowdreams1006)
+- Email: [snowdreams1006@163.com](mailto:snowdreams1006@163.com)
 
-You can email [me](mailto:snowdreams1006@163.com) or [new issue](https://github.com/snowdreams1006/gitbook-plugin-mygitalk/issues) on github.
+## 🤝 贡献
 
-## License
+如果你想贡献自己的一份力量,欢迎提交 [`Issues`](https://github.com/snowdreams1006/gitbook-plugin-copyright/issues) 或者 `Pull Request` 请求!
 
-`gitbook-plugin-mygitalk` is licensed under `Apache-2.0` License. See [LICENSE](LICENSE) for the full license text.
+## 支持
+
+如果本项目对你有所帮助,欢迎 ⭐️ [gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright) 项目,感谢你的支持与认可!
+
+## 📝 版权
+
+Copyright © 2019 [snowdreams1006](https://github.com/snowdreams1006).
+
+This project is [MIT](https://github.com/snowdreams1006/gitbook-plugin-copyright/blob/master/LICENSE) licensed.
