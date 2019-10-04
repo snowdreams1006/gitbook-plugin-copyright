@@ -12,16 +12,11 @@
     "plugins": [
         "github",
         "edit-link",
-        "copy-code-button",
-        "favicon-plus",
         "openwrite",
         "copyright",
         "mygitalk"
     ],
     "pluginsConfig": {
-        "favicon": "favicon.ico",
-        "appleTouchIconPrecomposed152": "apple-touch-icon-precomposed-152.png",
-        "output": "_book",
         "github": {
             "url": "https://github.com/snowdreams1006/gitbook-plugin-copyright"
         },
