@@ -10,11 +10,20 @@
         }
     },
     "plugins": [
+        "github",
+        "edit-link",
         "openwrite",
         "copyright",
         "mygitalk"
     ],
     "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/snowdreams1006/gitbook-plugin-copyright"
+        },
+        "edit-link": {
+            "base": "https://github.com/snowdreams1006/gitbook-plugin-copyright/blob/master",
+            "label": "编辑本页"
+        },
         "openwrite": {
             "blogId": "15702-1569305559839-744",
             "name": "雪之梦技术驿站",
