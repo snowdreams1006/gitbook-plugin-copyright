@@ -10,15 +10,23 @@
         }
     },
     "plugins": [
-        "github",
+        "favicon-custom",
+        "github-buttons",
         "edit-link",
         "openwrite",
         "copyright",
         "mygitalk"
     ],
     "pluginsConfig": {
-        "github": {
-            "url": "https://github.com/snowdreams1006/gitbook-plugin-copyright"
+        "favicon": "favicon.ico",
+        "appleTouchIconPrecomposed152": "apple-touch-icon-precomposed-152.png",
+        "github-buttons": {
+            "buttons": [{
+                "user": "snowdreams1006",
+                "repo": "gitbook-plugin-copyright",
+                "type": "star",
+                "size": "small"
+            }]
         },
         "edit-link": {
             "base": "https://github.com/snowdreams1006/gitbook-plugin-copyright/blob/master",
