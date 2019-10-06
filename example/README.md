@@ -105,8 +105,6 @@ $ gitbook serve
 
 不仅 [gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright) **官方文档**已整合 `copyright` 版权保护插件,此外还提供了示例项目,详情参考 `example` 目录.
 
-无论是 `docs` **官方文档**还是 `example` **示例文档**,整合 `copyright` 版权保护插件真的很容易!
-
 - [官方文档](https://github.com/snowdreams1006/gitbook-plugin-copyright/tree/master/docs)
 - [官方示例](https://github.com/snowdreams1006/gitbook-plugin-copyright/tree/master/example)
 
