@@ -107,6 +107,9 @@ $ gitbook serve
 
 无论是 `docs` **官方文档**还是 `example` **示例文档**,整合 `copyright` 版权保护插件真的很容易!
 
+- [官方文档](https://github.com/snowdreams1006/gitbook-plugin-copyright/tree/master/docs)
+- [官方示例](https://github.com/snowdreams1006/gitbook-plugin-copyright/tree/master/example)
+
 ## 作者
 
 👤 **snowdreams1006**
