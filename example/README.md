@@ -26,28 +26,51 @@
 - 支持自定义小尾巴**版权保护图片**
 - 支持 `Gitbook` **多语言环境**
 
-## 安装
+## 用法
 
-首先,在 `book.json` 配置文件中**声明** `copyright` 插件,示例代码如下:
+### Step #1 - 更新 `book.json` 配置文件
 
-```json
-{
-    "plugins" : ["copyright"]
-}
-```
+1. 在 `book.json` 配置文件中,添加 `copyright` 到 `plugins` 列表.
+2. 在 `book.json` 配置文件中,配置 `pluginsConfig` 对象.
 
-然后,在 `book.json` 配置文件中**配置** `copyright` 插件,示例代码如下:
+#### 单语言版简单示例 `book.json` 
 
 ```json
 {
-  "pluginsConfig": {
-    "copyright": {
+    "plugins": ["copyright"],
+    "pluginsConfig": {
+        "copyright": {
         "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
         "author": "雪之梦技术驿站",
         "website": "雪之梦技术驿站",
         "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+        }
     }
-  }
+}
+```
+
+#### 多语言版简单示例 `book.json` 
+
+```json
+{
+    "plugins": ["copyright"],
+    "pluginsConfig": {
+        "copyright": {
+            "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
+            "author": {
+                "en": "snowdreams1006",
+                "zh": "雪之梦技术驿站"
+            },
+            "website": {
+                "en": "snowdreams1006's Gitbook",
+                "zh": "雪之梦技术驿站"
+            },
+            "image": {
+                "en": "https://img.shields.io/badge/github-snowdreams1006-brightgreen.svg",
+                "zh": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+            }
+        }
+    }
 }
 ```
 
@@ -58,10 +81,24 @@
 - `website` : [必选]网站名称
 - `image` : [可选]版权保护图片
 
-最后,命令行内运行 `gitbook install` **安装插件**到本地,示例代码如下:
+### Step #2 - 运行 gitbook 相关命令
+
+1. 运行 `gitbook install` 命令安装到本地项目
 
 ```bash
 $ gitbook install
+```
+
+2. 运行 `gitbook build` 命令构建本地香火或者 `gitbook serve` 启动本地服务.
+
+```bash
+$ gitbook build
+```
+
+或者
+
+```bash
+$ gitbook serve
 ```
 
 ## 示例
