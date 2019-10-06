@@ -80,13 +80,13 @@
 
 ### Step #2 - 运行 gitbook 相关命令
 
-1. 运行 `gitbook install` 命令安装到本地项目
+- 运行 `gitbook install` 命令安装到本地项目
 
 ```bash
 $ gitbook install
 ```
 
-2. 运行 `gitbook build` 命令构建本地香火或者 `gitbook serve` 启动本地服务.
+- 运行 `gitbook build` 命令构建本地项目或者 `gitbook serve` 启动本地服务.
 
 ```bash
 $ gitbook build
