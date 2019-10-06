@@ -14,9 +14,6 @@
 
 ## 效果
 
-- [项目主页](https://snowdreams1006.github.io/gitbook-plugin-copyright/)
-- [项目源码](https://github.com/snowdreams1006/gitbook-plugin-copyright)
-
 ![copyright-use-preview.png](copyright-use-preview.png)
 
 ## 特色

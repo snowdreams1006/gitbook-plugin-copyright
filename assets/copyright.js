@@ -46,8 +46,14 @@ require([
         if (site.slice(-1) != "/") {
             site += '/';
         }
+        var author = copyrightConfig.author;
+        var website = copyrightConfig.website;
+        var image = copyrightConfig.image;
         var lang = gitbook.state.innerLanguage;
         if (lang) {
+            if (typeof author === 'object') author = author[lang];
+            if (typeof website === 'object') website = website[lang];
+            if (typeof image === 'object') image = image[lang];
             lang += '/';
         }
         var url = gitbook.state.filepath;
@@ -57,6 +63,9 @@ require([
         } else {
             url = site + lang + url.replace(/.md$/, '.html');
         }
-        return '<br><br>作者: ' + copyrightConfig.author + '<br>链接: ' + url + '<br>来源: ' + copyrightConfig.website + '<br>本文原创发布于「' + copyrightConfig.website + '」,转载请注明出处,谢谢合作!<br>';
+        if (/^zh.*/.test(gitbook.state.config.language)) {
+            return '<br><br>作者: ' + author + '<br>链接: ' + url + '<br>来源: ' + website + '<br>本文原创发布于「' + website + '」,转载请注明出处,谢谢合作!<br>';
+        }
+        return '<br><br>Author: ' + author + '<br>Url: ' + url + '<br>Source: ' + website + '<br>This article was originally published in「' + website + '」,Reproduced please indicate the source, thank you for cooperation!<br>';
     }
 });

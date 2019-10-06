@@ -16,14 +16,22 @@ module.exports = {
         "page:before": function(page) {
             this.log.debug.ln('page:before', JSON.stringify(page.content));
 
+            console.log(`language=${this.options.language}`);
+
             if (copyrightConfig) {
                 var site = copyrightConfig.site;
                 if (site.slice(-1) != "/") {
                     site += '/';
                 }
+                var author = copyrightConfig.author;
+                var website = copyrightConfig.website;
+                var image = copyrightConfig.image;
                 var lang = '';
                 if (this.isLanguageBook()) {
                     lang = this.options.language;
+                    if (typeof author === 'object') author = author[lang];
+                    if (typeof website === 'object') website = website[lang];
+                    if (typeof image === 'object') image = image[lang];
                     if (lang) {
                         lang += '/';
                     }
@@ -35,9 +43,12 @@ module.exports = {
                 } else {
                     url = site + lang + url.replace(/.md$/, '.html');
                 }
-                var copyright = '\n\n```html\n作者: ' + copyrightConfig.author + '\n链接: ' + url + '\n来源: ' + copyrightConfig.website + '\n本文原创发布于「' + copyrightConfig.website + '」,转载请注明出处,谢谢合作!\n```\n';
-                if (copyrightConfig.image) {
-                    copyright += `\n![${copyrightConfig.image}](${copyrightConfig.image})`;
+                var copyright = '\n\n```html\nAuthor: ' + author + '\nUrl: ' + url + '\nSource: ' + website + '\nThis article was originally published in「' + website + '」,Reproduced please indicate the source, thank you for cooperation!\n```\n';
+                if (/^zh.*/.test(this.options.language)) {
+                    copyright = '\n\n```html\n作者: ' + author + '\n链接: ' + url + '\n来源: ' + website + '\n本文原创发布于「' + website + '」,转载请注明出处,谢谢合作!\n```\n';
+                }
+                if (image) {
+                    copyright += `\n![${image}](${image})`;
                 }
 
                 page.content = page.content + copyright;

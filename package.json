@@ -14,22 +14,22 @@
       "site": {
         "type": "string",
         "required": true,
-        "description": "site"
+        "title": "site"
       },
       "author": {
-        "type": "string",
+        "type": ["string", "object"],
         "required": true,
-        "description": "author"
+        "title": "author"
       },
       "website": {
-        "type": "string",
+        "type": ["string", "object"],
         "required": true,
-        "description": "website"
+        "title": "website"
       },
       "image": {
-        "type": "string",
+        "type": ["string", "object"],
         "required": false,
-        "description": "image"
+        "title": "image"
       }
     }
   },
