@@ -16,8 +16,6 @@ module.exports = {
         "page:before": function(page) {
             this.log.debug.ln('page:before', JSON.stringify(page.content));
 
-            console.log(`language=${this.options.language}`);
-
             if (copyrightConfig) {
                 var site = copyrightConfig.site;
                 if (site.slice(-1) != "/") {
