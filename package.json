@@ -53,7 +53,10 @@
     "website",
     "wechat"
   ],
-  "author": "snowdreams1006",
+  "author": {
+    "name": "snowdreams1006",
+    "email": "snowdreams1006@163.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/snowdreams1006/gitbook-plugin-copyright/issues"
