@@ -90,7 +90,7 @@
 
 根据插件的实现效果,我们暂且将该插件命名为 `copyright` 版权插件,接下来就是赶紧公开注册插件以免名字被抢先一步!
 
-### 查询 `npmjs` 名称是否可用
+### 查询插件名称
 
 按照 `Gitbook` 插件命名规范,实用性插件必须以 `gitbook-plugin-*` 开头,而我们的插件名为 `copyright` ,因为完整名称应该是 `gitbook-plugin-copyright` .
 
@@ -112,37 +112,45 @@ https://www.npmjs.com/search?q=gitbook-plugin-copyright
 
 > 「雪之梦技术驿站」: 如果没有出现精确匹配 `exact match`,恭喜你,名称可用,请抓紧时间注册插件.否则另想新名,直到名称可用为止!
 
-### 创建 `gitbook-plugin-copyright` 开源项目
+### 创建开源项目
 
 经过上一步查询后确定插件名称暂时可用后,应该立即前往 github 创建插件同名的开源项目,以便插件后续更新维护.
+
+- 创建开源项目
 
 ![copyright-dev-zero2one-github-create-project.png](../images/copyright-dev-zero2one-github-create-project.png)
 
 > 「雪之梦技术驿站」: 创建插件项目时,建议项目信息尽量补全,添加 `README` 文件和版权类型.
 
-```bash
-$ git clone git@github.com:snowdreams1006/gitbook-plugin-readmore.git
-```
+- 克隆到本地项目
 
-## 总结和下节预告
+![copyright-dev-zero2one-github-clone-project.png](../images/copyright-dev-zero2one-github-clone-project.png)
 
-## 克隆到本地
+> 「雪之梦技术驿站」: 点击**克隆或下载**按钮获取克隆链接,准备下载到本地继续开发插件项目.
 
 ```bash
 $ git clone git@github.com:snowdreams1006/gitbook-plugin-readmore.git
 ```
 
-## 初始化 npm项目
+- 初始化 npmjs 项目
+
+克隆到本地工作空间后,切换到插件项目,运行初始化项目命令,生成默认 `package.json` 配置文件.
 
 ```bash
 $ npm init -y
 ```
 
-## 发布npm项目
+> 默认信息基本够用,暂时不必修改,重点是快速抢占插件名称!
+
+- 发布 npmjs 项目
 
 ```bash
 $ npm publish
 ```
+
+## 总结和下节预告
+
+
 
 ```bash
 $ git tag v0.0.1 -m "init"
