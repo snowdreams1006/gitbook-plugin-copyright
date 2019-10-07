@@ -77,9 +77,40 @@
 
 ![copyright-dev-zero2one-gitbook-plugin-plus-protect.png](../images/copyright-dev-zero2one-gitbook-plugin-plus-protect.png)
 
+```
+作者: 雪之梦技术驿站
+链接: https://snowdreams1006.github.io/myGitbook/advance/plugin-develop.html
+来源: 雪之梦技术驿站
+本文原创发布于雪之梦技术驿站,转载请注明出处,谢谢合作!
+```
+
 > 文章末尾自动追加版权声明信息,复制任意文章内容时自动追加版权保护信息,实现效果如下:
 
 ## 怎么快速做插件
+
+根据插件的实现效果,我们暂且将该插件命名为 `copyright` 版权插件,接下来就是赶紧公开注册插件以免名字被抢先一步!
+
+### 查询 `npmjs` 名称是否可用
+
+按照 `Gitbook` 插件命名规范,实用性插件必须以 `gitbook-plugin-*` 开头,而我们的插件名为 `copyright` ,因为完整名称应该是 `gitbook-plugin-copyright` .
+
+- 命令行中按照关键字搜索插件名称
+
+```bash
+$ npm search --keyword gitbook-plugin-copyright
+```
+
+> 如果没有搜索到项目,恭喜你,名称可用,抓紧时间赶紧注册!否则,重新起名,直到可用为止!
+
+- npmjs 官网在线搜索插件名称
+
+```
+https://www.npmjs.com/search?q=gitbook-plugin-copyright
+```
+
+> 如果没有出现精确匹配 `exact match`,恭喜你,名称可用,请抓紧时间注册插件.否则另想新名,直到名称可用为止!
+
+### 创建 ` gitbook-plugin-copyright` 开源项目
 
 ## 总结和下节预告
 
