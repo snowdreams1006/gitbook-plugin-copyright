@@ -129,7 +129,7 @@ https://www.npmjs.com/search?q=gitbook-plugin-copyright
 > 「雪之梦技术驿站」: 点击**克隆或下载**按钮获取克隆链接,准备下载到本地继续开发插件项目.
 
 ```bash
-$ git clone git@github.com:snowdreams1006/gitbook-plugin-readmore.git
+$ git clone git@github.com:snowdreams1006/gitbook-plugin-copyright.git
 ```
 
 - 初始化 npmjs 项目
@@ -140,7 +140,7 @@ $ git clone git@github.com:snowdreams1006/gitbook-plugin-readmore.git
 $ npm init -y
 ```
 
-> 默认信息基本够用,暂时不必修改,重点是快速抢占插件名称!
+> 「雪之梦技术驿站」: 默认信息基本够用,暂时不必修改,重点是快速抢占插件名称!
 
 - 发布 npmjs 项目
 
@@ -148,21 +148,48 @@ $ npm init -y
 $ npm publish
 ```
 
-## 总结和下节预告
+> 「雪之梦技术驿站」: 发布 npmjs 包时应该先登录账号 `npm login`,并设置为 npmjs 官方镜像源,`npm set registry https://registry.npmjs.org/` .
 
+### 成功抢注插件
 
+如果发布插件时命令行没有报错,不论是再次在命令行内搜索插件名称还是网站内搜索插件名称,此时就应该能搜索到刚刚发布成功的插件.
+
+```bash
+$ npm search --keyword gitbook-plugin-copyright
+```
+
+> 「雪之梦技术驿站」: 命令行内再次运行 `npm search --keyword gitbook-plugin-copyright` 发现插件已成功抢注!
+
+![copyright-dev-zero2one-npmjs-search-have-result.png](../images/copyright-dev-zero2one-npmjs-search-have-result.png)
+
+> 「雪之梦技术驿站」: 搜索到的插件名称正是刚刚发布成功的插件,此时插件名称 `gitbook-plugin-copyright` 已成功抢注!
+
+点击插件跳转到插件介绍页面,基本框架已初具模样,接下来的工作才是真正的插件开发.
+
+![copyright-dev-zero2one-npmjs-plugin-detail-preview.png](../images/copyright-dev-zero2one-npmjs-plugin-detail-preview.png)
+
+> 「雪之梦技术驿站」: 此时插件已成功发布到 npmjs 包管理中心,任何人都使用 `npm install gitbook-plugin-copyright` 安装插件,只不过暂时并没有任何代码逻辑而已!
+
+- 同步推送开源项目
+
+插件已发布到 npmjs 包管理工具,源代码还没有上传到远程服务器,所以此时应立一个里程碑,纪念下难忘的时刻.
 
 ```bash
 $ git tag v0.0.1 -m "init"
 ```
 
 ```bash
-$ npm search --keyword gitbook-plugin-copyright
-```
-
-```bash
 $ git push origin master
 ```
+
+## 总结和下节预告
+
+
+
+
+
+
+
 
 ```bash
 $ npm version patch
