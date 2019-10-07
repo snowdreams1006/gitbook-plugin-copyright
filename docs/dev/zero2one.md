@@ -8,13 +8,21 @@
 
 遗憾的是,`Gitbook` 已经停止了旧版服务,`gitbook-cli` 脚手架甚至也早已停止了维护,但是我心依旧钟爱于轻量级的脚手架,不抛弃不放弃.
 
-- [gitbook官方文档](https://snowdreams1006.github.io/gitbook-official/)
+- [`gitbook` 官方文档](https://snowdreams1006.github.io/gitbook-official/)
  
 > `Gitbook` 官方文档移植项目,原版英文文档和校准翻译中文文档,欢迎各位爱好者加入一起维护!
 
-- [gitbook 入门教程](https://snowdreams1006.github.io/myGitbook/)
+- [`gitbook` 入门教程](https://snowdreams1006.github.io/myGitbook/)
 
 > 从入门到熟练的 `Gitbook` 系列文章,高级进阶章节详细介绍了插件开发的基础知识,浅显易懂全是干货!
+
+- [`mygitalk` 评论插件](https://snowdreams1006.github.io/gitbook-plugin-mygitalk/)
+
+> 基于 `gitalk` 实现的 `Gitbook` 插件,详细介绍了从思路到实现的全过程,封装第三方工具时值得借鉴.
+
+- [`readmore` 阅读更多插件](https://snowdreams1006.github.io/gitbook-plugin-readmore/)
+
+> 基于 `readmore` 实现的阅读更多插件,采用模板渲染手段封装第三方工具,和 `mygitalk` 插件的实现思路互为补充!
 
 ## 为什么做插件
 
