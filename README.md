@@ -23,7 +23,28 @@
 - 支持自定义小尾巴**版权保护图片**
 - 支持 `Gitbook` **多语言环境**
 
-## 用法
+## ✨ 示例
+
+不仅 [gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright) **官方文档**已整合 `copyright` 版权保护插件,此外还提供了示例项目,详情参考 `example` 目录.
+
+- [官方文档](https://github.com/snowdreams1006/gitbook-plugin-copyright/tree/master/docs)
+- [官方示例](https://github.com/snowdreams1006/gitbook-plugin-copyright/tree/master/example)
+
+```json
+{
+    "plugins": ["copyright"],
+    "pluginsConfig": {
+        "copyright": {
+        "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
+        "author": "雪之梦技术驿站",
+        "website": "雪之梦技术驿站",
+        "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+        }
+    }
+}
+```
+
+## 🚀 用法
 
 ### Step #1 - 更新 `book.json` 配置文件
 
@@ -98,12 +119,31 @@ $ gitbook build
 $ gitbook serve
 ```
 
-## 示例
+## 🤝 贡献
 
-不仅 [gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright) **官方文档**已整合 `copyright` 版权保护插件,此外还提供了示例项目,详情参考 `example` 目录.
+如果你想贡献自己的一份力量,欢迎提交 [`Issues`](https://github.com/snowdreams1006/gitbook-plugin-copyright/issues) 或者拉取 `Pull Request` 请求!
 
-- [官方文档](https://github.com/snowdreams1006/gitbook-plugin-copyright/tree/master/docs)
-- [官方示例](https://github.com/snowdreams1006/gitbook-plugin-copyright/tree/master/example)
+- Fork [gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright/fork)
+
+- 创建功能分支
+
+```bash
+$ git checkout -b feature/fooBar
+```
+
+- 提交 `commit` 描述
+
+```bash
+$ git commit -am 'Add some fooBar'
+```
+
+- 推送到远程分支
+
+```bash
+$ git push origin feature/fooBar
+```
+
+- 创建新的 `Pull Request`
 
 ## 作者
 
@@ -112,13 +152,11 @@ $ gitbook serve
 - Github: [@snowdreams1006](https://github.com/snowdreams1006)
 - Email: [snowdreams1006@163.com](mailto:snowdreams1006@163.com)
 
-## 🤝 贡献
-
-如果你想贡献自己的一份力量,欢迎提交 [`Issues`](https://github.com/snowdreams1006/gitbook-plugin-copyright/issues) 或者 `Pull Request` 请求!
-
 ## 支持
 
 如果本项目对你有所帮助,欢迎 ⭐️ [gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright) 项目,感谢你的支持与认可!
+
+![snowdreams1006-wechat-donate.jpg](snowdreams1006-wechat-donate.jpg)
 
 ## 📝 版权
 
