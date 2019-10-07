@@ -51,7 +51,7 @@
 
 幸运的是,在平时逛的各大平台中慕课网和CSDN自带版权保护,因此不妨来个强强联合,开发出增强版版权保护插件.
 
-![copyright-dev-zero2one-gitbook-imooc-copy-and-paste.png](../images/copyright-dev-zero2one-gitbook-imooc-copy-and-paste.png)
+![copyright-dev-zero2one-imooc-copy-and-paste.png](../images/copyright-dev-zero2one-imooc-copy-and-paste.png)
 
 ```
 作者：雪之梦技术驿站
@@ -59,9 +59,9 @@
 来源：慕课网
 ```
 
-> 慕课网手记文章复制内容时会自动追加版权保护信息,包括作者,链接和来源三部分.
+> 「雪之梦技术驿站」: 慕课网手记文章复制内容时会自动追加版权保护信息,包括作者,链接和来源三部分.
 
-![copyright-dev-zero2one-gitbook-csdn-copyright-protect.png](../images/copyright-dev-zero2one-gitbook-csdn-copyright-protect.png)
+![copyright-dev-zero2one-csdn-copyright-protect.png](../images/copyright-dev-zero2one-csdn-copyright-protect.png)
 
 ```
 版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
@@ -71,11 +71,11 @@
 原文链接：https://snowdreams1006.blog.csdn.net/article/details/102077796
 ```
 
-> CSDN原创博客开头自动追加版权声明信息,包括版权声明和本文链两部分,复制版权信息时会追加版权保护信息.
+> 「雪之梦技术驿站」: CSDN原创博客开头自动追加版权声明信息,包括版权声明和本文链两部分,复制版权信息时会追加版权保护信息.
 
 慕课网手记文章全文复制均会追加版权保护信息,而 CSDN原创博客开头显示版权信息复制该信息时才会追加版权保护信息,综合两者,不妨做个增强版版权保护插件.
 
-![copyright-dev-zero2one-gitbook-plugin-plus-protect.png](../images/copyright-dev-zero2one-gitbook-plugin-plus-protect.png)
+![copyright-dev-zero2one-plugin-plus-protect.png](../images/copyright-dev-zero2one-plugin-plus-protect.png)
 
 ```
 作者: 雪之梦技术驿站
@@ -84,7 +84,7 @@
 本文原创发布于雪之梦技术驿站,转载请注明出处,谢谢合作!
 ```
 
-> 文章末尾自动追加版权声明信息,复制任意文章内容时自动追加版权保护信息,实现效果如下:
+> 「雪之梦技术驿站」: 文章末尾自动追加版权声明信息,复制任意文章内容时自动追加版权保护信息,实现效果如下:
 
 ## 怎么快速做插件
 
@@ -100,17 +100,29 @@
 $ npm search --keyword gitbook-plugin-copyright
 ```
 
-> 如果没有搜索到项目,恭喜你,名称可用,抓紧时间赶紧注册!否则,重新起名,直到可用为止!
+> 「雪之梦技术驿站」: 如果没有搜索到项目,恭喜你,名称可用,抓紧时间赶紧注册!否则,重新起名,直到可用为止!
 
 - npmjs 官网在线搜索插件名称
+
+![copyright-dev-zero2one-npmjs-search-no-result.png](../images/copyright-dev-zero2one-npmjs-search-no-result.png)
 
 ```
 https://www.npmjs.com/search?q=gitbook-plugin-copyright
 ```
 
-> 如果没有出现精确匹配 `exact match`,恭喜你,名称可用,请抓紧时间注册插件.否则另想新名,直到名称可用为止!
+> 「雪之梦技术驿站」: 如果没有出现精确匹配 `exact match`,恭喜你,名称可用,请抓紧时间注册插件.否则另想新名,直到名称可用为止!
 
-### 创建 ` gitbook-plugin-copyright` 开源项目
+### 创建 `gitbook-plugin-copyright` 开源项目
+
+经过上一步查询后确定插件名称暂时可用后,应该立即前往 github 创建插件同名的开源项目,以便插件后续更新维护.
+
+![copyright-dev-zero2one-github-create-project.png](../images/copyright-dev-zero2one-github-create-project.png)
+
+> 「雪之梦技术驿站」: 创建插件项目时,建议项目信息尽量补全,添加 `README` 文件和版权类型.
+
+```bash
+$ git clone git@github.com:snowdreams1006/gitbook-plugin-readmore.git
+```
 
 ## 总结和下节预告
 
