@@ -2,33 +2,33 @@
 
 ## 什么是插件
 
-`Gitbook` 插件是扩展 `Gitbook` 功能的最佳方式,如果 `Gitbook` 没有提供你想要的功能或者说网络上也没有现成的解决方案时,那么只剩下自食其力这么一条道路,自力更生开发自己的插件解决问题!
+`Gitbook` 插件是扩展 `Gitbook` 功能的**最佳方式**,如果 `Gitbook` **没有想要的功能**或者说网络上也没有**现成的解决方案**时,那么只剩下自食其力这条道路,让我们一起来**自力更生开发插件**解决问题吧!
 
-幸运的是,`Gitbook` 提供了插件机制留给开发者去扩展更多自定义功能,虽然开发文档不是特别完善,甚至有时候需要翻阅相关源码才能定位到暴露出的 `api`,但是这一切都不影响开发的热情,谁让一开始选定了 `Gitbook` 呢!
+幸运的是,`Gitbook` 提供了**插件机制**留给开发者去**扩展自定义功能**,虽然官方开发文档不是特别完善,甚至有时候需要**翻阅相关源码**才能定位到暴露出的 `api`,但是这一切都**不影响开发的热情**,谁让我们一开始就选定了 `Gitbook` 呢!
 
 ![copyright-dev-zero2one-gitbook-index.png](../images/copyright-dev-zero2one-gitbook-index.png)
 
-遗憾的是,`Gitbook` 已经停止了旧版服务,`gitbook-cli` 脚手架甚至也早已停止了维护,但是我心依旧钟爱于轻量级的脚手架,不抛弃不放弃.
+遗憾的是,目前 `Gitbook` 已经**停止了旧版服务**,`gitbook-cli` 脚手架**甚至也早已停止了维护**,但是我心依旧钟爱于轻量级的脚手架,不抛弃不放弃,所以花费了一定心血整理出相关的资料文档.
 
 - [`gitbook` 官方文档](https://snowdreams1006.github.io/gitbook-official/)
- 
-> 「雪之梦技术驿站」: `Gitbook` 官方文档移植项目,包括原版英文和校准翻译中文,欢迎各位爱好者加入一起维护!
+
+> 「雪之梦技术驿站」: `Gitbook` 官方文档移植项目,包括**原版英文和校准中文**,欢迎各位爱好者加入一起维护!
 
 - [`gitbook` 入门教程](https://snowdreams1006.github.io/myGitbook/)
 
-> 「雪之梦技术驿站」: 从入门到熟练的 `Gitbook` 系列文章,高级进阶章节详细介绍了插件开发的基础知识,浅显易懂全是干货!
+> 「雪之梦技术驿站」: 从入门到熟练运用系列文章,**高级进阶章节**详细介绍了插件开发的基础知识,浅显易懂全是干货!
 
 - [`mygitalk` 评论插件](https://snowdreams1006.github.io/gitbook-plugin-mygitalk/)
 
-> 「雪之梦技术驿站」: 基于 `gitalk` 实现的 `Gitbook` 插件,详细介绍了从思路到实现的全过程,二次封装第三方工具时值得借鉴.
+> 「雪之梦技术驿站」: 基于 `gitalk` 实现的 `Gitbook` 插件,详细介绍了**从思路到实现的全过程**,二次封装第三方工具时值得借鉴.
 
 - [`readmore` 阅读更多插件](https://snowdreams1006.github.io/gitbook-plugin-readmore/)
 
-> 「雪之梦技术驿站」: 基于 `readmore` 实现的阅读更多插件,采用模板渲染手段封装第三方工具,和 `mygitalk` 插件的实现思路互为补充!
+> 「雪之梦技术驿站」: 基于 `readmore` 实现的阅读更多插件,基于**模板渲染手段**封装第三方工具,和 `mygitalk` 插件的实现思路**互为补充**!
 
 ## 为什么做插件
 
-> 「雪之梦技术驿站」: 没有现成插件,所以自力更生,力有所及,所以开源!
+> 「雪之梦技术驿站」: 没有现成插件,所以自力更生,因为力有所及,所以开源!
 
 [![github](https://img.shields.io/badge/github-snowdreams1006-brightgreen.svg)](https://github.com/snowdreams1006)
 [![wechat](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7-%E9%9B%AA%E4%B9%8B%E6%A2%A6%E6%8A%80%E6%9C%AF%E9%A9%BF%E7%AB%99-brightgreen.svg)](https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg)
@@ -287,6 +287,8 @@ $ git push origin master
 ```
 
 开发插件其实并不难,实际开发中大多数问题网络上基本上都有现成的解决方案,只需要学会搜索外加拥有一定的学习能力,相信你也一定可以开发出自己的插件.
+
+![copyright-dev-zero2one-plugin-plus-protect.png](../images/copyright-dev-zero2one-plugin-plus-protect.png)
 
 本文主要介绍了如何从0到1发布自己的插件,只是骨架而已,什么代码也没有,下一节我们将开始介绍如何给骨架注入生命力,使其变成 `Gitbook` 插件.
 
