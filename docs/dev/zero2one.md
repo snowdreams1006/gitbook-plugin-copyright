@@ -170,6 +170,8 @@ $ npm publish
 
 ### 成功抢注插件
 
+如果命令行内运行 `npm publish` 命令发布插件没有报错信息,恭喜你!插件应该成功发布到 `npmjs` 包注册中心!
+
 - 验证插件是否发布成功
 
 如果发布插件时命令行没有报错,不论是在命令行内搜索插件还是网站内搜索插件,此时就应该能搜索到刚刚发布成功的插件.
@@ -190,9 +192,7 @@ $ npm search --keyword gitbook-plugin-copyright
 
 > 「雪之梦技术驿站」: 此时插件已成功发布到 npmjs 包管理中心,任何人都使用 `npm install gitbook-plugin-copyright` 安装插件,只不过暂时并没有任何代码逻辑而已!
 
-- 同步推送开源项目
-
-插件已发布到 `npmjs` 包管理工具,源代码还没有上传到远程服务器,所以此时应立一个里程碑,纪念下难忘的时刻.
+现在虽然插件已发布到 `npmjs` 包管理工具,但是源代码还没有上传到远程服务器,无法进行后续的开源维护,因此此时创建一个里程碑,纪念下难忘的时刻并准备同步到 `github`.
 
 - 首先,本地创建 `v0.0.1` 版本
 
@@ -216,7 +216,17 @@ $ git push origin v0.0.1
 $ git push origin master
 ```
 
-## 总结和下节预告
+至此,从创建插件到发布插件以及最后同步插件源码全部流程基本完成,从零到壹开发插件并发布就是这么简单!
+
+## 相关总结和预告
+
+本文主要介绍了**如何从0到1发布自己的插件**,虽然只是骨架,具体什么代码也没有,但是对于完整的开发流程而言已经足够了!
+
+相信你也不会重复开发一个一模一样的 `gitbook-plugin-copyright` 插件,所以具体代码对于读者而言可能没有特别大的用处.
+
+但是通过本文可以了解到开发插件其实并不难,实际开发中**大多数问题网络上基本上都有现成的解决方案**,只需要学会搜索外加拥有一定的学习能力,相信你最终也一定可以开发出自己的插件.
+
+![copyright-dev-zero2one-plugin-plus-protect.png](../images/copyright-dev-zero2one-plugin-plus-protect.png)
 
 ### npmjs 相关命令
 
@@ -226,11 +236,15 @@ $ git push origin master
 $ npm adduser
 ```
 
+> 「雪之梦技术驿站」: 命令行内注册信息比较简单,不如网页版注册还可以设置头像之类的,推荐网页版注册.
+
 - 登录账号
 
 ```bash
 $ npm login
 ```
+
+> 「雪之梦技术驿站」: 不论哪种注册方式,**发布插件前都要先登录账号**以确认插件作者信息.
 
 - 查看当前用户
 
@@ -238,11 +252,15 @@ $ npm login
 $ npm whoami
 ```
 
+> 「雪之梦技术驿站」: **显式登陆**后肯定知道刚才已经登录,**一段时间后还记得是谁在登陆吗**?此时,运行该命令就可以查看当前登录用户信息.
+
 - 创建 npmjs 包
 
 ```bash
 $ npm init -y
 ```
+
+> 「雪之梦技术驿站」: 默认创建的配置文件 `package.json` 基本够用,也可以自行修改相关配置信息.
 
 - 切换 npmjs 官方镜像源
 
@@ -250,17 +268,23 @@ $ npm init -y
 $ npm set registry https://registry.npmjs.org/
 ```
 
+> 「雪之梦技术驿站」: **强制切换成官方镜像源**,主要是针对可能使用[淘宝镜像源](http://npm.taobao.org/)的用户.
+
 - 发布 npmjs 包
 
 ```bash
 $ npm publish
 ```
 
+> 「雪之梦技术驿站」: 发布插件前请**确保已经登录并切换到官方镜像源**,否则发布会失败!
+
 - 按关键字搜索 npmjs 包
 
 ```bash
-$ npm search --keyword gitbook-plugin-package
+$ npm search --keyword gitbook-plugin-<package>
 ```
+
+> 「雪之梦技术驿站」: 发布前未被注册时是搜不到结果,发布后的插件作者信息应该是当前用户.
 
 ### git 相关命令
 
@@ -294,16 +318,11 @@ $ git push origin <version>
 $ git push origin master
 ```
 
-开发插件其实并不难,实际开发中大多数问题网络上基本上都有现成的解决方案,只需要学会搜索外加拥有一定的学习能力,相信你也一定可以开发出自己的插件.
+如果你有什么好的灵感或者想法,**赶紧去抢注吧**,毕竟名称可是全局唯一独一无二的呀!
 
-![copyright-dev-zero2one-plugin-plus-protect.png](../images/copyright-dev-zero2one-plugin-plus-protect.png)
-
-本文主要介绍了如何从0到1发布自己的插件,只是骨架而已,什么代码也没有,下一节我们将开始介绍如何给骨架注入生命力,使其变成 `Gitbook` 插件.
+下一节我们将开始**介绍如何给基本骨架注入生命力**,使其变成真正的 `Gitbook` 插件,甚至实现 `gitbook-plugin-copyright` 插件功能!
 
 > 开源项目: [https://github.com/snowdreams1006/gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright)
-
-
-
 
 
 
