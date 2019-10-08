@@ -90,6 +90,18 @@
 
 根据插件的实现效果,我们暂且将该插件命名为 `copyright` 版权插件,接下来就是赶紧公开注册插件以免名字被抢先一步!
 
+### 发布插件前提
+
+- `npmjs` [官网](https://www.npmjs.com/)在线注册
+
+> 注册过程比较简单,用户名和邮箱之类的信息即可,不用付费也可以发布包.
+
+- 命令行运行 `npm adduser` 注册
+
+```bash
+$ npm adduser
+```
+
 ### 查询插件名称
 
 按照 `Gitbook` 插件命名规范,实用性插件必须以 `gitbook-plugin-*` 开头,而我们的插件名为 `copyright` ,因为完整名称应该是 `gitbook-plugin-copyright` .
@@ -198,7 +210,11 @@ $ git push origin master
 
 ## 总结和下节预告
 
+开发插件其实并不难,实际开发中大多数问题网络上基本上都有现成的解决方案,只需要学会搜索外加拥有一定的学习能力,相信你也一定可以开发出自己的插件.
 
+本文主要介绍了如何从0到1发布自己的插件,只是骨架而已,什么代码也没有,下一节我们将开始介绍如何给骨架注入生命力,使其变成 `Gitbook` 插件.
+
+> 开源项目: [https://github.com/snowdreams1006/gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright)
 
 
 
