@@ -28,7 +28,9 @@
 
 ## 为什么做插件
 
-> 「雪之梦技术驿站」: 没有现成插件,所以自力更生,因为力有所及,所以开源!
+> 「雪之梦技术驿站」: 因为没有现成插件,所以自力更生,因为力有所及,所以开源!
+
+如果你和我一样**全平台发布**文章的话,估计你也会遇到和我一样的问题: **原创首发个人博客后转载自其他各大平台**,为了吸引流量总是要**添加原创声明小尾巴**,麻烦且费事!
 
 [![github](https://img.shields.io/badge/github-snowdreams1006-brightgreen.svg)](https://github.com/snowdreams1006)
 [![wechat](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7-%E9%9B%AA%E4%B9%8B%E6%A2%A6%E6%8A%80%E6%9C%AF%E9%A9%BF%E7%AB%99-brightgreen.svg)](https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg)
@@ -43,15 +45,13 @@
 [![开源中国](https://img.shields.io/badge/%E5%BC%80%E6%BA%90%E4%B8%AD%E5%9B%BD-%E9%9B%AA%E4%B9%8B%E6%A2%A6%E6%8A%80%E6%9C%AF%E9%A9%BF%E7%AB%99-brightgreen.svg)](https://my.oschina.net/snowdreams1006)
 [![腾讯云社区](https://img.shields.io/badge/%E8%85%BE%E8%AE%AF%E4%BA%91%E7%A4%BE%E5%8C%BA-%E9%9B%AA%E4%B9%8B%E6%A2%A6%E6%8A%80%E6%9C%AF%E9%A9%BF%E7%AB%99-brightgreen.svg)](https://cloud.tencent.com/developer/user/2952369/activities)
 
-如果你和我一样全平台发布文章的话,估计你也会遇到和我一样的问题: 原创首发个人博客后转载自其他各大平台,为了吸引流量总是要添加原创声明小尾巴,麻烦且费事!
+当一次又一次重复这种无意义的劳动时,自然要寻求解决之道,**偷懒是促进生产力发展的原始动力**!
 
-当一次又一次重复这种无意义的劳动时,自然要寻求解决之道,偷懒是促进生产力发展的原始动力!
-
-现在问题很清楚了,那就是需要开发一款 `Gitbook` 插件帮助文章自动添加版权保护信息,来减少人力劳动.
+现在问题很清楚了,那就是需要开发一款 `Gitbook` 插件**帮助文章自动添加版权保护信息**,来减少人力劳动.
 
 幸运的是,在平时逛的各大平台中慕课网和CSDN自带版权保护,因此不妨来个强强联合,开发出增强版版权保护插件.
 
-![copyright-dev-zero2one-imooc-copy-and-paste.png](../images/copyright-dev-zero2one-imooc-copy-and-paste.png)
+- 慕课网版权声明
 
 ```
 作者：雪之梦技术驿站
@@ -59,9 +59,11 @@
 来源：慕课网
 ```
 
+![copyright-dev-zero2one-imooc-copy-and-paste.png](../images/copyright-dev-zero2one-imooc-copy-and-paste.png)
+
 > 「雪之梦技术驿站」: 慕课网手记文章复制内容时会自动追加版权保护信息,包括作者,链接和来源三部分.
 
-![copyright-dev-zero2one-csdn-copyright-protect.png](../images/copyright-dev-zero2one-csdn-copyright-protect.png)
+- CSDN 版权声明
 
 ```
 版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
@@ -71,11 +73,13 @@
 原文链接：https://snowdreams1006.blog.csdn.net/article/details/102077796
 ```
 
+![copyright-dev-zero2one-csdn-copyright-protect.png](../images/copyright-dev-zero2one-csdn-copyright-protect.png)
+
 > 「雪之梦技术驿站」: CSDN原创博客开头自动追加版权声明信息,包括版权声明和本文链两部分,复制版权信息时会追加版权保护信息.
 
-慕课网手记文章全文复制均会追加版权保护信息,而 CSDN原创博客开头显示版权信息复制该信息时才会追加版权保护信息,综合两者,不妨做个增强版版权保护插件.
+- 强强联合的版权保护插件声明
 
-![copyright-dev-zero2one-plugin-plus-protect.png](../images/copyright-dev-zero2one-plugin-plus-protect.png)
+慕课网手记文章全文复制均会追加版权保护信息,而 CSDN原创博客开头显示版权信息复制该信息时才会追加版权保护信息,综合两者,不妨做个增强版版权保护插件.
 
 ```
 作者: 雪之梦技术驿站
@@ -83,6 +87,8 @@
 来源: 雪之梦技术驿站
 本文原创发布于雪之梦技术驿站,转载请注明出处,谢谢合作!
 ```
+
+![copyright-dev-zero2one-plugin-plus-protect.png](../images/copyright-dev-zero2one-plugin-plus-protect.png)
 
 > 「雪之梦技术驿站」: 文章末尾自动追加版权声明信息,复制任意文章内容时自动追加版权保护信息,实现效果如下:
 
