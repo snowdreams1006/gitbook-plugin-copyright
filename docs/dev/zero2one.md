@@ -174,9 +174,23 @@ $ npm search --keyword gitbook-plugin-copyright
 
 插件已发布到 npmjs 包管理工具,源代码还没有上传到远程服务器,所以此时应立一个里程碑,纪念下难忘的时刻.
 
+- 首先,本地创建 `v0.0.1` 版本
+
 ```bash
 $ git tag v0.0.1 -m "init"
 ```
+
+- 然后,推送到远程服务器
+
+```bash
+$ git push origin v0.0.1
+```
+
+![copyright-dev-zero2one-github-tag-preview.png](../images/copyright-dev-zero2one-github-tag-preview.png)
+
+> 下载地址: [https://github.com/snowdreams1006/gitbook-plugin-copyright/releases](https://github.com/snowdreams1006/gitbook-plugin-copyright/releases)
+
+- 最后,顺便更新主干 `master` 分支
 
 ```bash
 $ git push origin master
@@ -191,63 +205,4 @@ $ git push origin master
 
 
 
-```bash
-$ npm version patch
-```
 
-```bash
-$ git tag
-```
-
-```bash
-$ git push origin v0.0.2
-```
-
-```bash
-$ git push origin master
-```
-
-```bash
-$ npm install -g cnpm --registry=https://registry.npm.taobao.org
-```
-
-> https://johnnyting.github.io/posts/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90readmegitignore%E6%96%87%E4%BB%B6/
-
-```bash
-readme
-```
-
-> https://github.com/kefranabg/readme-md-generator
-
-- https://github.com/github/gitignore/
-- http://www.gitignore.io/
-
-```json
-"engines": {
-    "gitbook": ">=2.4.3"
-  },
-  "gitbook": {
-    "properties": {
-      "blogId": {
-        "type": "string",
-        "required": true,
-        "description": "Openwrite blogId."
-      },
-      "name": {
-        "type": "string",
-        "required": true,
-        "description": "Blog name."
-      },
-      "qrcode": {
-        "type": "string",
-        "required": true,
-        "description": "Wechat qrcode."
-      },
-      "keyword": {
-        "type": "string",
-        "required": true,
-        "description": "Wechat keyword."
-      }
-    }
-  }
-```
