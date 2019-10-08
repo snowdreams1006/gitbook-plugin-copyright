@@ -210,6 +210,82 @@ $ git push origin master
 
 ## 总结和下节预告
 
+### npmjs 相关命令
+
+- 注册账号
+
+```bash
+$ npm adduser
+```
+
+- 登录账号
+
+```bash
+$ npm login
+```
+
+- 查看当前用户
+
+```bash
+$ npm whoami
+```
+
+- 创建 npmjs 包
+
+```bash
+$ npm init -y
+```
+
+- 切换 npmjs 官方镜像源
+
+```bash
+$ npm set registry https://registry.npmjs.org/
+```
+
+- 发布 npmjs 包
+
+```bash
+$ npm publish
+```
+
+- 按关键字搜索 npmjs 包
+
+```bash
+$ npm search --keyword gitbook-plugin-package
+```
+
+### git 相关命令
+
+- 克隆到本地项目
+
+```bash
+$ git clone git@github.com:<username>/gitbook-plugin-<package>.git
+```
+
+- 提交更改到本地版本库
+
+```bash
+$ git commit -am "change log"
+```
+
+- 创建本地标签版本
+
+```bash
+$ git tag <version> -m "publish log"
+```
+
+- 推送标签到远程服务器
+
+```bash
+$ git push origin <version>
+```
+
+- 推送最新代码到远程主干 `master` 
+
+```bash
+$ git push origin master
+```
+
 开发插件其实并不难,实际开发中大多数问题网络上基本上都有现成的解决方案,只需要学会搜索外加拥有一定的学习能力,相信你也一定可以开发出自己的插件.
 
 本文主要介绍了如何从0到1发布自己的插件,只是骨架而已,什么代码也没有,下一节我们将开始介绍如何给骨架注入生命力,使其变成 `Gitbook` 插件.
