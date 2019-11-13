@@ -12,6 +12,10 @@
 
 ### 🏠 [主页](https://github.com/snowdreams1006/gitbook-plugin-copyright#readme)
 
+- Github : [https://snowdreams1006.github.io/gitbook-plugin-copyright/](https://snowdreams1006.github.io/gitbook-plugin-copyright/)
+- Gitee : [https://snowdreams1006.gitee.io/gitbook-plugin-copyright/](https://snowdreams1006.gitee.io/gitbook-plugin-copyright/)
+- Gitlab : [https://snowdreams1006.gitlab.io/gitbook-plugin-copyright/](https://snowdreams1006.gitlab.io/gitbook-plugin-copyright/)
+
 ## 效果
 
 ![copyright-use-preview.png](copyright-use-preview.png)
