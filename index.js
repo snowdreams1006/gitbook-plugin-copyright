@@ -4,7 +4,7 @@ module.exports = {
     book: {
         assets: "./assets",
         js: [
-            "copyright.js"
+            "plugin.js"
         ]
     },
     hooks: {

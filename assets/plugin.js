@@ -6,7 +6,6 @@ require([
 
     gitbook.events.bind("start", function(e, config) {
         copyrightConfig = config.copyright || {};
-
         initCopyright();
     });
 
@@ -17,7 +16,6 @@ require([
         if(!copyProtect){
             return;
         }
-        var ua = navigator.userAgent.toLowerCase();
         if (window.ActiveXObject) {
             document.body.oncopy = function() {
                 event.returnValue = false;
@@ -26,7 +24,7 @@ require([
                 clipboardData.setData('Text', t + extraCopyrightInfo);
             };
         } else {
-            function addLink() {
+            document.oncopy = function(){
                 var body_element = document.getElementsByTagName('body')[0];
                 var selection;
                 selection = window.getSelection();
@@ -39,8 +37,7 @@ require([
                 newdiv.innerHTML = copytext;
                 selection.selectAllChildren(newdiv);
                 window.setTimeout(function() { body_element.removeChild(newdiv); }, 0);
-            }
-            document.oncopy = addLink;
+            };
         }
     }
 
