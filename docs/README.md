@@ -39,10 +39,10 @@
     "plugins": ["copyright"],
     "pluginsConfig": {
         "copyright": {
-        "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
-        "author": "雪之梦技术驿站",
-        "website": "雪之梦技术驿站",
-        "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+            "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
+            "author": "雪之梦技术驿站",
+            "website": "雪之梦技术驿站",
+            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
         }
     }
 }
@@ -62,10 +62,10 @@
     "plugins": ["copyright"],
     "pluginsConfig": {
         "copyright": {
-        "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
-        "author": "雪之梦技术驿站",
-        "website": "雪之梦技术驿站",
-        "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+            "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
+            "author": "雪之梦技术驿站",
+            "website": "雪之梦技术驿站",
+            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
         }
     }
 }
@@ -102,6 +102,7 @@
 - `author` : [必选]作者信息
 - `website` : [必选]网站名称
 - `image` : [可选]版权保护图片
+- `copyProtect` : [可选]复制内容是否追加版权保护信息
 
 ### Step #2 - 运行 gitbook 相关命令
 
