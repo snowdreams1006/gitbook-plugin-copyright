@@ -42,7 +42,8 @@
             "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
             "author": "雪之梦技术驿站",
             "website": "雪之梦技术驿站",
-            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png",
+            "copyProtect": false
         }
     }
 }
@@ -65,7 +66,8 @@
             "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
             "author": "雪之梦技术驿站",
             "website": "雪之梦技术驿站",
-            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png",
+            "copyProtect": false
         }
     }
 }
@@ -90,7 +92,8 @@
             "image": {
                 "en": "https://img.shields.io/badge/github-snowdreams1006-brightgreen.svg",
                 "zh": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
-            }
+            },
+            "copyProtect": false
         }
     }
 }

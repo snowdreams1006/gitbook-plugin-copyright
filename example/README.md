@@ -12,6 +12,10 @@
 
 ### 🏠 [主页](https://github.com/snowdreams1006/gitbook-plugin-copyright#readme)
 
+- Github : [https://snowdreams1006.github.io/gitbook-plugin-copyright/](https://snowdreams1006.github.io/gitbook-plugin-copyright/)
+- Gitee : [https://snowdreams1006.gitee.io/gitbook-plugin-copyright/](https://snowdreams1006.gitee.io/gitbook-plugin-copyright/)
+- Gitlab : [https://snowdreams1006.gitlab.io/gitbook-plugin-copyright/](https://snowdreams1006.gitlab.io/gitbook-plugin-copyright/)
+
 ## 效果
 
 ![copyright-use-preview.png](copyright-use-preview.png)
@@ -35,10 +39,11 @@
     "plugins": ["copyright"],
     "pluginsConfig": {
         "copyright": {
-        "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
-        "author": "雪之梦技术驿站",
-        "website": "雪之梦技术驿站",
-        "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+            "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
+            "author": "雪之梦技术驿站",
+            "website": "雪之梦技术驿站",
+            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png",
+            "copyProtect": false
         }
     }
 }
@@ -58,10 +63,11 @@
     "plugins": ["copyright"],
     "pluginsConfig": {
         "copyright": {
-        "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
-        "author": "雪之梦技术驿站",
-        "website": "雪之梦技术驿站",
-        "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+            "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
+            "author": "雪之梦技术驿站",
+            "website": "雪之梦技术驿站",
+            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png",
+            "copyProtect": false
         }
     }
 }
@@ -86,7 +92,8 @@
             "image": {
                 "en": "https://img.shields.io/badge/github-snowdreams1006-brightgreen.svg",
                 "zh": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
-            }
+            },
+            "copyProtect": false
         }
     }
 }
@@ -98,6 +105,7 @@
 - `author` : [必选]作者信息
 - `website` : [必选]网站名称
 - `image` : [可选]版权保护图片
+- `copyProtect` : [可选]复制内容是否追加版权保护信息
 
 ### Step #2 - 运行 gitbook 相关命令
 
