@@ -13,6 +13,10 @@ require([
     gitbook.events.bind("page.change", initCopyright);
 
     function initCopyright() {
+        var copyProtect = copyrightConfig.copyProtect;
+        if(!copyProtect){
+            return;
+        }
         var ua = navigator.userAgent.toLowerCase();
         if (window.ActiveXObject) {
             document.body.oncopy = function() {
@@ -38,7 +42,6 @@ require([
             }
             document.oncopy = addLink;
         }
-
     }
 
     function getCopyright() {

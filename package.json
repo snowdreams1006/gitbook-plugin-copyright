@@ -14,7 +14,7 @@
       "site": {
         "type": "string",
         "required": true,
-        "title": "site"
+        "title": "Copyright site"
       },
       "author": {
         "type": [
@@ -22,7 +22,7 @@
           "object"
         ],
         "required": true,
-        "title": "author"
+        "title": "Copyright author"
       },
       "website": {
         "type": [
@@ -30,7 +30,7 @@
           "object"
         ],
         "required": true,
-        "title": "website"
+        "title": "Copyright information links to website"
       },
       "image": {
         "type": [
@@ -38,7 +38,13 @@
           "object"
         ],
         "required": false,
-        "title": "image"
+        "title": "Copyright information display pictures"
+      },
+      "copyProtect": {
+          "type": "boolean",
+          "title": "Whether to append copyright information when copying content,true or false",
+          "required": false,
+          "default": true
       }
     }
   },
