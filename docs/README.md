@@ -10,15 +10,9 @@
 
 > `gitbook-plugin-copyright` 是基于Gitbook实现的**版权保护插件**,用于复制内容时**追加版权信息**以及文章末尾**添加版权小尾巴**.
 
-### 🏠 [主页](https://github.com/snowdreams1006/gitbook-plugin-copyright#readme)
-
-- Github : [https://snowdreams1006.github.io/gitbook-plugin-copyright/](https://snowdreams1006.github.io/gitbook-plugin-copyright/)
-- Gitee : [https://snowdreams1006.gitee.io/gitbook-plugin-copyright/](https://snowdreams1006.gitee.io/gitbook-plugin-copyright/)
-- Gitlab : [https://snowdreams1006.gitlab.io/gitbook-plugin-copyright/](https://snowdreams1006.gitlab.io/gitbook-plugin-copyright/)
-
 ## 效果
 
-![copyright-use-preview.png](copyright-use-preview.png)
+![copyright-use-preview.png](https://snowdreams1006.github.io/gitbook-plugin-copyright/copyright-use-preview.png)
 
 ## 特色
 
@@ -28,11 +22,6 @@
 - 支持 `Gitbook` **多语言环境**
 
 ## ✨ 示例
-
-不仅 [gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright) **官方文档**已整合 `copyright` 版权保护插件,此外还提供了示例项目,详情参考 `example` 目录.
-
-- [官方文档](https://github.com/snowdreams1006/gitbook-plugin-copyright/tree/master/docs)
-- [官方示例](https://github.com/snowdreams1006/gitbook-plugin-copyright/tree/master/example)
 
 ```json
 {
@@ -127,32 +116,6 @@ $ gitbook build
 $ gitbook serve
 ```
 
-## 🤝 贡献
-
-如果你想贡献自己的一份力量,欢迎提交 [`Issues`](https://github.com/snowdreams1006/gitbook-plugin-copyright/issues) 或者拉取 `Pull Request` 请求!
-
-- Fork [gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright/fork)
-
-- 创建功能分支
-
-```bash
-$ git checkout -b feature/fooBar
-```
-
-- 提交 `commit` 描述
-
-```bash
-$ git commit -am 'Add some fooBar'
-```
-
-- 推送到远程分支
-
-```bash
-$ git push origin feature/fooBar
-```
-
-- 创建新的 `Pull Request`
-
 ## 作者
 
 👤 **snowdreams1006**
@@ -164,7 +127,7 @@ $ git push origin feature/fooBar
 
 如果本项目对你有所帮助,欢迎 ⭐️ [gitbook-plugin-copyright](https://github.com/snowdreams1006/gitbook-plugin-copyright) 项目,感谢你的支持与认可!
 
-![snowdreams1006-wechat-donate.jpg](snowdreams1006-wechat-donate.jpg)
+![snowdreams1006-wechat-donate.jpg](https://snowdreams1006.github.io/snowdreams1006-wechat-donate.jpg)
 
 ## 📝 版权
 

@@ -10,30 +10,29 @@
         }
     },
     "plugins": [
-        "favicon-absolute",
-        "github-buttons",
-        "edit-link",
-        "readmore",
         "copy-code-button",
-        "copyright",
-        "mygitalk"
+        "last-update-time",
+        "favicon-absolute",
+        "copyright"
     ],
     "pluginsConfig": {
+        "last-update-time": {
+            "label": "最后更新时间: ",
+            "format": "YYYY-MM-DD HH:mm:ss"
+        },
         "favicon-absolute": {
             "favicon": "/favicon.ico",
-            "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png"
-        },
-        "github-buttons": {
-            "buttons": [{
-                "user": "snowdreams1006",
-                "repo": "gitbook-plugin-copyright",
-                "type": "star",
-                "size": "small"
-            }]
-        },
-        "edit-link": {
-            "base": "https://github.com/snowdreams1006/gitbook-plugin-copyright/blob/master",
-            "label": "编辑本页"
+            "bookmark": "/bookmark.ico",
+            "appleTouchIcon152": "/apple-touch-icon-152.png",
+            "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png",
+            "appleTouchIconMore": {
+                "120x120": "/apple-touch-icon-120.png",
+                "180x180": "/apple-touch-icon-180.png"
+            },
+            "appleTouchIconPrecomposedMore": {
+                "120x120": "/apple-touch-icon-precomposed-120.png",
+                "180x180": "/apple-touch-icon-precomposed-180.png"
+            }
         },
         "readmore": {
             "blogId": "15702-1569305559839-744",
@@ -42,19 +41,10 @@
             "keyword": "vip"
         },
         "copyright": {
-            "site": "https://snowdreams1006.github.io/gitbook-plugin-copyright",
+            "site": "https://snowdreams1006.github.io/gitbook-plugin-readmore",
             "author": "雪之梦技术驿站",
             "website": "雪之梦技术驿站",
-            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png",
-            "copyProtect": false
-        },
-        "mygitalk": {
-            "clientID": "a1fd26c47f8e8a76a297",
-            "clientSecret": "1a1cb3a901338394e78394039d720de2cf221beb",
-            "repo": "gitbook-plugin-copyright",
-            "owner": "snowdreams1006",
-            "admin": ["snowdreams1006"],
-            "distractionFreeMode": false
+            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
         }
     }
 }
