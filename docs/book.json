@@ -10,11 +10,12 @@
         }
     },
     "plugins": [
-        "copy-code-button",
         "last-update-time",
         "favicon-absolute",
+        "copy-code-button",
+        "copyright",
         "readmore",
-        "copyright"
+        "icp"
     ],
     "pluginsConfig": {
         "last-update-time": {
@@ -40,6 +41,11 @@
             "name": "雪之梦技术驿站",
             "qrcode": "https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg",
             "keyword": "vip"
+        },
+        "icp": {
+            "label": "&copy snowdreams1006 版权所有",
+            "number": "浙ICP备18042346号",
+            "link": "https://beian.miit.gov.cn/"
         },
         "copyright": {
             "site": "https://snowdreams1006.github.io/gitbook-plugin-readmore",
