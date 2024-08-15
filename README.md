@@ -10,10 +10,6 @@
 
 > `gitbook-plugin-copyright` 是基于Gitbook实现的**版权保护插件**,用于复制内容时**追加版权信息**以及文章末尾**添加版权小尾巴**.
 
-## 效果
-
-![copyright-use-preview.png](https://snowdreams1006.github.io/gitbook-plugin-copyright/copyright-use-preview.png)
-
 ## 特色
 
 - 支持复制内容**自动追加**版本保护信息

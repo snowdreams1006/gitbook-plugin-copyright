@@ -9,13 +9,9 @@ module.exports = {
     },
     hooks: {
         "init": function() {
-            this.log.debug.ln('init', this.options.pluginsConfig.copyright);
-
             copyrightConfig = this.options.pluginsConfig.copyright;
         },
         "page:before": function(page) {
-            this.log.debug.ln('page:before', JSON.stringify(page.content));
-
             if (copyrightConfig) {
                 var site = copyrightConfig.site;
                 if (site.slice(-1) != "/") {
