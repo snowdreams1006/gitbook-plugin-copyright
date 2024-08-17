@@ -1,5 +1,4 @@
 var copyrightConfig = {};
-
 module.exports = {
     book: {
         assets: "./assets",
@@ -13,10 +12,6 @@ module.exports = {
         },
         "page:before": function(page) {
             if (copyrightConfig) {
-                var site = copyrightConfig.site;
-                if (site.slice(-1) != "/") {
-                    site += '/';
-                }
                 var author = copyrightConfig.author;
                 var website = copyrightConfig.website;
                 var image = copyrightConfig.image;
@@ -30,16 +25,9 @@ module.exports = {
                         lang += '/';
                     }
                 }
-                var url = page.path;
-                var readmeReg = /\/?\bREADME\.md$/;
-                if (readmeReg.test(url)) {
-                    url = site + lang + (url === 'README.md' ? '' : url.replace(readmeReg, '/'));
-                } else {
-                    url = site + lang + url.replace(/.md$/, '.html');
-                }
-                var copyright = '\n\n```html\nAuthor: ' + author + '\nUrl: ' + url + '\nSource: ' + website + '\nThis article was originally published in「' + website + '」,Reproduced please indicate the source, thank you for cooperation!\n```\n';
+                var copyright = '\n\n```html\nAuthor: ' + author + '\nSource: ' + website + '\nThis article was originally published in「' + website + '」,Reproduced please indicate the source, thank you for cooperation!\n```\n';
                 if (/^zh.*/.test(this.options.language)) {
-                    copyright = '\n\n```html\n作者: ' + author + '\n链接: ' + url + '\n来源: ' + website + '\n本文原创发布于「' + website + '」,转载请注明出处,谢谢合作!\n```\n';
+                    copyright = '\n\n```html\n作者: ' + author + '\n来源: ' + website + '\n本文原创发布于「' + website + '」,转载请注明出处,谢谢合作!\n```\n';
                 }
                 if (image) {
                     copyright += `\n![${image}](${image})`;
